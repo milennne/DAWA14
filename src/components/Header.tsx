@@ -39,7 +39,7 @@ export default function Header() {
                 href="/contact"
                 className="text-gray-700 hover:text-blue-600 transition"
               >
-                Sobre Mí
+                Contáctame
               </Link>
             </li>
           </ul>
