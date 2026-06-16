@@ -67,8 +67,7 @@ export default function ContactPage() {
           <span className="ml-auto text-gray-300">→</span>
         </a>
       </div>
-
-      {/* Formulario */}
+{/* Formulario */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
         <h2 className="text-xl font-bold text-gray-900 mb-6">Envíame un mensaje</h2>
         <div className="grid gap-4">
@@ -77,7 +76,7 @@ export default function ContactPage() {
             <input
               type="text"
               placeholder="Tu nombre"
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-400 transition"
+              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-blue-400 transition"
             />
           </div>
           <div>
@@ -85,7 +84,7 @@ export default function ContactPage() {
             <input
               type="email"
               placeholder="tu@email.com"
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-400 transition"
+              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-blue-400 transition"
             />
           </div>
           <div>
@@ -93,7 +92,7 @@ export default function ContactPage() {
             <textarea
               rows={4}
               placeholder="Cuéntame sobre tu proyecto..."
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-400 transition resize-none"
+              className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-900 focus:outline-none focus:border-blue-400 transition resize-none"
             />
           </div>
           <button className="w-full bg-blue-600 text-white rounded-lg py-3 font-semibold hover:bg-blue-700 transition">
