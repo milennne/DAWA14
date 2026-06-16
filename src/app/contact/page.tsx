@@ -1,34 +1,71 @@
 import { Metadata } from 'next';
-import { personalInfo } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Contacto',
-  description: `Ponte en contacto con ${personalInfo.name}`,
+  description: 'Ponte en contacto conmigo',
 };
 
 export default function ContactPage() {
   return (
     <section className="container mx-auto p-8 max-w-2xl">
-      <h1 className="text-3xl font-bold mb-6">Contacto</h1>
-      <div className="bg-white rounded-lg shadow p-6 space-y-4">
-        <div>
-          <p className="text-gray-600">Email</p>
-          <a href={`mailto:${personalInfo.email}`} className="text-blue-600 hover:underline">
-            {personalInfo.email}
-          </a>
-        </div>
-        <div>
-          <p className="text-gray-600">GitHub</p>
-          <a href={personalInfo.github} target="_blank" className="text-blue-600 hover:underline">
-            {personalInfo.github}
-          </a>
-        </div>
-        <div>
-          <p className="text-gray-600">LinkedIn</p>
-          <a href={personalInfo.linkedin} target="_blank" className="text-blue-600 hover:underline">
-            {personalInfo.linkedin}
-          </a>
-        </div>
+      <h1 className="text-3xl font-bold mb-8 text-gray-900">
+        Contacto
+      </h1>
+
+      <div className="grid gap-4">
+
+        <a
+          href="mailto:milene.fuentes@tecsup.edu.pe"
+          className="flex items-center gap-4 bg-white rounded-xl shadow p-6 hover:shadow-md transition"
+        >
+          <div className="bg-blue-100 text-blue-600 rounded-full p-3 text-2xl">
+            
+          </div>
+
+          <div>
+            <p className="text-sm text-gray-500">Email</p>
+            <p className="font-semibold text-gray-800">
+              milene.fuentes@tecsup.edu.pe
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/milennne"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-4 bg-white rounded-xl shadow p-6 hover:shadow-md transition"
+        >
+          <div className="bg-gray-100 text-gray-800 rounded-full p-3 text-2xl">
+            
+          </div>
+
+          <div>
+            <p className="text-sm text-gray-500">GitHub</p>
+            <p className="font-semibold text-gray-800">
+              github.com/milennne
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/milene-fuentes-26a35436b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-4 bg-white rounded-xl shadow p-6 hover:shadow-md transition"
+        >
+          <div className="bg-blue-50 text-blue-700 rounded-full p-3 text-2xl">
+            
+          </div>
+
+          <div>
+            <p className="text-sm text-gray-500">LinkedIn</p>
+            <p className="font-semibold text-gray-800">
+              Milene Fuentes
+            </p>
+          </div>
+        </a>
+
       </div>
     </section>
   );
